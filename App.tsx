@@ -1,12 +1,12 @@
-import ProLayout, { PageContainer } from '@ant-design/pro-layout';
-import React from 'react';
-import defaultProps from './_defaultProps';
+import ProLayout, { PageContainer } from "@ant-design/pro-layout";
+import React from "react";
+import defaultProps from "./_defaultProps";
 
 export default () => {
   return (
     <div
       style={{
-        height: '100vh',
+        height: "100vh"
       }}
     >
       <ProLayout
@@ -18,7 +18,7 @@ export default () => {
           <div
             id="customize_menu_header"
             onClick={() => {
-              window.open('https://remaxjs.org/');
+              window.open("https://remaxjs.org/");
             }}
           >
             {logo}
@@ -27,7 +27,7 @@ export default () => {
         )}
         {...defaultProps}
         location={{
-          pathname: '/welcome',
+          pathname: "/welcome"
         }}
       >
         <PageContainer content="欢迎使用">Hello World</PageContainer>
